@@ -1,0 +1,40 @@
+.container {
+  width: 1200px;
+  height: 600px;
+  border: solid 2px black;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="link"],
+textarea {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: black;
+  outline: none;
+}
+
+button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #135492;
+}
