@@ -1,6 +1,6 @@
 .container {
-  width: 1200px;
-  height: 600px;
+  width: 800px;
+  height: 1000px;
   border: solid 2px black;
 }
 label {
