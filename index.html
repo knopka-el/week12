@@ -7,26 +7,33 @@
     <link rel="stylesheet" href="./index.css" />
     <title>Homework</title>
   </head>
+
   <body>
-    <div class="container">
+    <form class="container">
       <label for="login">Имя:</label>
       <input type="text" name="name" id="name-input" required />
+      <p class="radio">Показывать Ваше имя в комментарии ?</p>
+      <label>
+        <input type="radio" name="showName" value="Yes" checked /> Да
+      </label>
+      <label> <input type="radio" name="showName" value="No" /> Нет </label>
       <label for="avatar">Ссылка на аватар:</label>
-      <input type="link" name="avatar" id="avatar-input" required />
+      <input type="url" name="avatar" id="avatar-input" required />
       <label for="message">Сообщение:</label>
       <textarea id="comment-input" required></textarea>
-      <button class="comment-button" type="button" onclick="sendAll()">
+      <button class="comment-button" type="reset" onclick="sendAll()">
         Отправить
       </button>
       <div class="result">
         <h2>Чат</h2>
         <div class="user">
-          <img src="" id="result-link" width="100px" alt="avatar" />
+          <img id="result-link" width="100px" alt="avatar" />
           <p id="result-name"></p>
+          <p id="result-time"></p>
         </div>
         <p id="result-comment"></p>
       </div>
-    </div>
+    </form>
     <script src="./index.js"></script>
   </body>
 </html>
